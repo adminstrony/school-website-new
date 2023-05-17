@@ -49,12 +49,19 @@ body {
     height: auto;
   }
   @media all and (width <= 400px) {
+    &__container {
+      margin: auto;
+      width: 95%;
+    }
     &__item a {
       flex-wrap: wrap;
 
       img {
         width: 100%;
         height: auto;
+      }
+      &:hover {
+        transform: scale(1);
       }
     }
     &__title {
