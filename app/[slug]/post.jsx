@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import '../scss/_post.scss'
 import blog from '../api/blog.json'
+import Slider from './slider'
 
 export default function Post({ slug }) {
   const Post = blog.Posty.find((find) => find.slug == slug)
@@ -18,13 +19,7 @@ export default function Post({ slug }) {
         </p>
 
         <figure className="main-post__slider">
-          <Image
-            src={Post.image}
-            alt={Post.title}
-            className="main-post__slider--img"
-            width="500"
-            height="500"
-          />
+          <Slider Img={Post.image} />
         </figure>
 
         <h1
