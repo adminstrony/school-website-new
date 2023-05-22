@@ -1,8 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+/** @type {import('next').NenextConfig = {
   experimental: {
-    appDir: true,
-  },
+  
   async redirects() {
     return [
       {
@@ -19,7 +17,7 @@ const nextConfig = {
         source: '/nabor',
         destination: 'https://nabor.pcss.pl/lancut',
         permanent: true,
-      },
+     
       {
         source: '/prywatnosc',
         destination: 'https://media.graphassets.com/zG7PkIAqTveHpA7HKki6',
